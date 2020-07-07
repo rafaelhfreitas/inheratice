@@ -1,22 +1,19 @@
-# inheratice
+# composition, inheratice and multiple inheratice
 
-Testes de herança com Python simulando um sistema de calculo de pagametnos de um RH com herança
+Pratices of concepts compostion, inheritace and multipe inheritace
 
-Exemplos praticos de uso de composição e herança.
+Creation of a HR system using [policy-based design](https://en.wikipedia.org/wiki/Modern_C%2B%2B_Design#Policy-based_design)
 
-Criação de um sistema de RH baseado no padrão de [policy-based design](https://en.wikipedia.org/wiki/Modern_C%2B%2B_Design#Policy-based_design
-)
-
-Diagrama UML da aplicação do modulo composition:
+UML Diagram of application module composition:
 
 ![alt text](https://files.realpython.com/media/ic-policy-based-composition.6e78bdb5824f.jpg)
 
-Diagrama da aplicação do modulo multiple_inheratice:
+UML Diagram of application multiple_inheratice:
 
 ![alt text](https://files.realpython.com/media/ic-inheritance-policies.0a0de2d42a25.jpg)
 
+Topics:
 
-Topicos abordados:
 <ul>
     <li> Duck typing
     <li> Diamond Error with multiple inheratice
