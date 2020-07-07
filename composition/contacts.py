@@ -12,4 +12,3 @@ class Address:
             lines.append(self.street2)
         lines.append(f"{self.city}, {self.state} {self.zipcode}")
         return "\n".join(lines)
-
