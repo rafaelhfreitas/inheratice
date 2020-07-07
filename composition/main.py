@@ -1,3 +1,7 @@
+#stale
+# seee the file program.py
+
+
 # from hr import PayrollSystem
 # from productivity import ProductivitySystem
 # from employees import EmployeeDatabase

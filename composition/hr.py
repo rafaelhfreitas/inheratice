@@ -1,4 +1,4 @@
-class PayrollSystem:
+class _PayrollSystem:
     def __init__(self):
         self._employee_polices = {
             1: SalaryPolicy(4000),
@@ -65,3 +65,12 @@ class CommissionPolicy(SalaryPolicy):
     def calculate_payroll(self):
         fixed = super().calculate_payroll()
         return fixed + self.commission
+
+
+_payroll_system = _PayrollSystem()
+
+def get_policy(employee_id):
+    return _payroll_system.get_policy(employee_id)
+
+def calculate_payroll(employees):
+    _payroll_system.calculate_payroll(employees)

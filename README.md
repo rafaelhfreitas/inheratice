@@ -22,4 +22,6 @@ Topics:
     <li> The type of relationships 'Is a' and 'Has a' 
     <li> When you should choose Composition or Inherit
     <li> Using mixin to add behavior for classes already implemented
+    <li> Refactoring using factory pattern 
+    <li> Refactoring using singleton pattern
 </ul>
