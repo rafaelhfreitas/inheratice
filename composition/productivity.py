@@ -1,4 +1,18 @@
 class ProductivitySystem:
+    def __init__(self):
+        self._roles = {
+            "manager": ManagerRole,
+            "secretary": SecretaryRole,
+            "sales": SalesRole,
+            "factory": FactoryRole,
+        }
+
+    def get_role(self, role_id):
+        role_type = self._roles.get(role_id)
+        if not role_type:
+            raise ValueError("role_id")
+        return role_type()
+
     def track(self, employees, hours):
         print("Tracking Employee Productivity")
         print("==============================")
@@ -9,41 +23,41 @@ class ProductivitySystem:
 
 
 class ManagerRole:
-    def work(self, hours):
+    def perform_duties(self, hours):
         return f"screams and yells for {hours} hours."
 
 
 class SecretaryRole:
-    def work(self, hours):
-        return f"expends {hours} hours doing office paperwork."
+    def perform_duties(self, hours):
+        return f"does paperwork for {hours} hours."
 
 
 class SalesRole:
-    def work(self, hours):
+    def perform_duties(self, hours):
         return f"expends {hours} hours on the phone."
 
 
 class FactoryRole:
-    def work(self, hours):
+    def perform_duties(self, hours):
         return f"manufactures gadgets for {hours} hours."
 
 
-# class TemporarySecretary(Secretary, HourlyEmployee):
-#     """
-#     MRO = Method Resolution Order is used to check the order of resolution when
-#     a class is derived of two or more classes
-#     >>> from employees import TemporarySecretary
-#     >>> TemporarySecretary.__mro__
-#     (<class 'employees.TemporarySecretary'>, \
-#      <class 'employees.HourlyEmployee'>, \
-#      <class 'employees.Secretary'>, \
-#      <class 'employees.SalaryEmployee'>, \
-#      <class 'employees.Employee'>, \
-#      <class 'object'>)
-#     """
+# class ManagerRole:
+#     def work(self, hours):
+#         return f"screams and yells for {hours} hours."
 
-#     def __init__(self, id, name, hours_worked, hour_rate):
-#         HourlyEmployee.__init__(self, id, name, hours_worked, hour_rate)
 
-#     def calculate_payroll(self):
-#         return HourlyEmployee.calculate_payroll(self)
+# class SecretaryRole:
+#     def work(self, hours):
+#         return f"expends {hours} hours doing office paperwork."
+
+
+# class SalesRole:
+#     def work(self, hours):
+#         return f"expends {hours} hours on the phone."
+
+
+# class FactoryRole:
+#     def work(self, hours):
+#         return f"manufactures gadgets for {hours} hours."
+
