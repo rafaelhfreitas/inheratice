@@ -21,4 +21,5 @@ Topics:
     <li> What is better Composition or Inherit 
     <li> The type of relationships 'Is a' and 'Has a' 
     <li> When you should choose Composition or Inherit
+    <li> Using mixin to add behavior for classes already implemented
 </ul>
