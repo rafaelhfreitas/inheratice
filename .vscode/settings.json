@@ -1,7 +1,8 @@
 {
     "python.formatting.provider": "black",
     "python.linting.pylintEnabled": false,
-    "python.linting.pylamaEnabled": true,
-    "python.linting.enabled": true,
-    "python.pythonPath": "/usr/bin/python3"
+    "python.linting.pylamaEnabled": false,
+    "python.linting.enabled": false,
+    "python.pythonPath": "/home/rafael/.pyenv/versions/3.8.0/bin/python",
+    "python.linting.flake8Enabled": true
 }
